@@ -1,8 +1,8 @@
 use_frameworks!
 
-target 'CRUConfig_Example', :exclusive => true do
-  pod 'CRUConfig', :path => '../'
-end
+xcodeproj 'CRUConfig', 'CRUConfig-Example' => :release, 'CRUConfig-Example-Beta' => :release, 'CRUConfig-Example-Release' => :release
+
+pod 'CRUConfig', :path => '../'
 
 target 'CRUConfig_Tests', :exclusive => true do
   pod 'CRUConfig', :path => '../'

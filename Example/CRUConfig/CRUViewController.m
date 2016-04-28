@@ -7,8 +7,13 @@
 //
 
 #import "CRUViewController.h"
+#import "MYAPI.h"
 
 @interface CRUViewController ()
+
+@property (nonatomic, strong) MYAPI *myAPI;
+
+- (IBAction)login:(id)sender;
 
 @end
 
@@ -18,12 +23,27 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	self.myAPI = [[MYAPI alloc] initWithConfig:[CRUConfig sharedConfig]];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)login:(id)sender {
+	
+	UIAlertController *loginAlert = [UIAlertController alertControllerWithTitle:@"Login"
+																		message:[NSString stringWithFormat:@"logged into %@", self.myAPI.baseURL.absoluteString]
+																 preferredStyle:UIAlertControllerStyleAlert];
+	
+	UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"OK"
+													   style:UIAlertActionStyleDefault
+													 handler:^(UIAlertAction * action) {}];
+	[loginAlert addAction:okAction];
+	[self presentViewController:loginAlert animated:YES completion:nil];
+	
 }
 
 @end
