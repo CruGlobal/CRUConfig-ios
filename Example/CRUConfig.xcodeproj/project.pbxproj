@@ -24,7 +24,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6890632D1CD26A8A005A3575 /* MYAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6890632C1CD26A8A005A3575 /* MYAPI.m */; };
 		6890632F1CD26BF5005A3575 /* config.debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6890632E1CD26BF5005A3575 /* config.debug.plist */; };
-		689063321CD26C85005A3575 /* config.adhoc.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689063301CD26C85005A3575 /* config.adhoc.plist */; };
+		689063321CD26C85005A3575 /* config.beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689063301CD26C85005A3575 /* config.beta.plist */; };
 		689063331CD26C85005A3575 /* config.release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689063311CD26C85005A3575 /* config.release.plist */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8B89666C6B61EEF4232BC298 /* Pods_CRUConfig_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D047048FE15BE92DFE5B253C /* Pods_CRUConfig_Example.framework */; };
@@ -68,7 +68,7 @@
 		6890632B1CD26A8A005A3575 /* MYAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAPI.h; sourceTree = "<group>"; };
 		6890632C1CD26A8A005A3575 /* MYAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAPI.m; sourceTree = "<group>"; };
 		6890632E1CD26BF5005A3575 /* config.debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.debug.plist; sourceTree = "<group>"; };
-		689063301CD26C85005A3575 /* config.adhoc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.adhoc.plist; sourceTree = "<group>"; };
+		689063301CD26C85005A3575 /* config.beta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.beta.plist; sourceTree = "<group>"; };
 		689063311CD26C85005A3575 /* config.release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.release.plist; sourceTree = "<group>"; };
 		68BAE4EA676A1F18AC25B2B9 /* Pods_CRUConfig_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRUConfig_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7C5AF5CDC97372B413B614 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* CRUConfig-Prefix.pch */,
 				6890632E1CD26BF5005A3575 /* config.debug.plist */,
-				689063301CD26C85005A3575 /* config.adhoc.plist */,
+				689063301CD26C85005A3575 /* config.beta.plist */,
 				689063311CD26C85005A3575 /* config.release.plist */,
 			);
 			name = "Supporting Files";
@@ -300,7 +300,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				689063321CD26C85005A3575 /* config.adhoc.plist in Resources */,
+				689063321CD26C85005A3575 /* config.beta.plist in Resources */,
 				689063331CD26C85005A3575 /* config.release.plist in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				6890632F1CD26BF5005A3575 /* config.debug.plist in Resources */,
@@ -661,7 +661,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
-					"ADHOC=1",
+					"BETA=1",
 				);
 				INFOPLIST_FILE = "CRUConfig/CRUConfig-Info.plist";
 				MODULE_NAME = ExampleApp;
