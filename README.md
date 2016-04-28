@@ -104,6 +104,8 @@ pod "CRUConfig"
 
 ###Adding Environment definitions to project configurations
 
+*Note:* If you are going to use this option you should be aware that at the time of writing cocoapods has an issue where it can't find the framework of this pod. To fix it you need to add the following value as a framework search path for your target's build setting: `$(SYMROOT)/Release$(EFFECTIVE_PLATFORM_NAME)`. [http://stackoverflow.com/a/35627389/399893](http://stackoverflow.com/a/35627389/399893)
+
 Instead of adding `#define ADHOC` into your code you can have your project inject them into your build via your build's configuration. Here is how you do that:
 
 Select your project file > Select your target > Select `Build Settings` > Search for `preprocessor`
