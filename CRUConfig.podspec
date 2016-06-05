@@ -24,10 +24,10 @@ The order of priority is as follows:
  * config.plist
                        DESC
 
-  s.homepage         = "https://github.com/CruGlobal/CRUConfig"
+  s.homepage         = "https://github.com/CruGlobal/CRUConfig-ios"
   s.license          = 'MIT'
   s.author           = { "Harro" => "michael.harrison@cru.org" }
-  s.source           = { :git => "https://github.com/CruGlobal/CRUConfig.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/CruGlobal/CRUConfig-ios.git", :tag => s.version.to_s }
 
   s.ios.deployment_target = '7.0'
 
