@@ -8,27 +8,20 @@
 
 Pod::Spec.new do |s|
   s.name             = "CRUConfig"
-  s.summary          = "CRUConfig is a wrapper to config.plist, prividing a easy way to get API keys out of your code."
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.version          = "1.1.0"
+  s.summary          = "CRUConfig is an objc implementation of dotenv. It provides a wrapper to config.plist, giving you an easy way to get API keys and urls out of your code."
   s.description      = <<-DESC
-CRUConfig is a wrapper to config.plist, prividing a easy way to get API keys out of your code, while having your IDE check the spelling of your keys now that they will be properites instead of stings. It is also environment based so you can define different config files for different environments.
+CRUConfig is an objc implementation of dotenv. It provides a wrapper to config.plist, giving you an easy way to get API keys and urls out of your code, while having your IDE autocomplete your values now that they will be properites instead of stings. It is also environment based so you can define different config files for different environments.
 
-e.g. If you add `DEBUG=1` as a precompiler macro in one of your project's configurations CRUConfig would then attempt to load `config.debug.plist`. Which means if you defined `base_url` as `localhost` in `config.debug.plist` and `api.example.com` in `config.release.plist` your code would automatically switch which server it points to based on whether you hit the run button or the archive button in xcode.
+The pod will look for a config file that matches the name of your current configuration.
+e.g. If you are building your debug configuration it will look for config.debug.plist in your application bundle. If you build a target with your release configuration it will look for config.release.plist. If you create a custom configuration for your project called beta and your build uses that configuration then the pod will look for config.beta.plist. Note that they are alway in lowercase.
 
-The following pairs of enviroments and config files are available
-(RELEASE, config.release.plist),
-(ADHOC, config.adhoc.plist),
-(DEBUG, config.debug.plist),
-(PRODUCTION, config.production.plist),
-(BETA, config.beta.plist),
-(DEVELOPMENT, config.development.plist)
+If you don't want to do configuration specific config files you can just use config.default.plist or config.plist.
+
+The order of priority is as follows:
+ * config.<current build configuration name>.plist
+ * config.default.plist
+ * config.plist
                        DESC
 
   s.homepage         = "https://github.com/CruGlobal/CRUConfig"

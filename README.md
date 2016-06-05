@@ -5,9 +5,17 @@
 [![License](https://img.shields.io/cocoapods/l/CRUConfig.svg?style=flat)](http://cocoapods.org/pods/CRUConfig)
 [![Platform](https://img.shields.io/cocoapods/p/CRUConfig.svg?style=flat)](http://cocoapods.org/pods/CRUConfig)
 
-CRUConfig is a wrapper to config.plist, prividing a easy way to get API keys out of your code, while having your IDE check the spelling of your keys now that they will be properites instead of stings. It is also environment based so you can define different config files for different environments.
+CRUConfig is an objc implementation of dotenv. It provides a wrapper to config.plist, giving you an easy way to get API keys and urls out of your code, while having your IDE autocomplete your values now that they will be properites instead of stings. It is also environment based so you can define different config files for different build configurations. (Not sure what a build configuration is, read [this](#what-are-build-configurations))
 
-e.g. If you add `DEBUG=1` as a precompiler macro in one of your project's configurations CRUConfig would then attempt to load `config.debug.plist`. Which means if you defined `base_url` as `localhost` in `config.debug.plist` and `api.example.com` in `config.release.plist` your code would automatically switch which server it points to based on whether you hit the run button or the archive button in xcode.
+The pod will look for a config file that matches the name of your current configuration.
+e.g. If you are building your debug configuration it will look for config.debug.plist in your application bundle. If you build a target with your release configuration it will look for config.release.plist. If you create a custom configuration for your project called beta and your build uses that configuration then the pod will look for config.beta.plist. Note that they are alway in lowercase.
+
+If you don't want to do configuration specific config files you can just use config.default.plist or config.plist.
+
+The order of priority is as follows:
+ * config.<current build configuration name>.plist
+ * config.default.plist
+ * config.plist
 
 Read on to see how it works and how you can use it with your project. 
 
@@ -22,35 +30,26 @@ OR
 MYAPI *myAPI = [MYAPI apiWithConfig:[CRUConfig sharedConfig]];
 ```
 
-###Loading Files Based on configuration
+###Loading Files Based on Build Configuration
 
-If you add any of the following as a precompiler macro in a build configuration (or as a `#define` statement although `#define` is not recommended) CRUConfig will attempt to load the associated plist file.
+Not sure what a build configuration is, read [this](#what-are-build-configurations)
 
-If you define `ADHOC` as a precompiler macro you should create a `config.adhoc.plist` file with your adhoc specific values like `base_url` as  `stage.api.example.com` then when you build your adhoc build all references to `[CRUConfig sharedConfig].baseURL` would reference your staging server. In your config.release.plist file you could then define `base_url` as `api.example.com` so now your release builds will automatically point at your production server.
+All projects have at least 2 build configurations `Debug` and `Release`. If you create config files that match the current build configuration CRUConfig will attempt to load the associated plist file.
 
-The following pairs are available:
-```
-(RELEASE, config.release.plist)
-(ADHOC, config.adhoc.plist)
-(DEBUG, config.debug.plist)
-(PRODUCTION, config.production.plist)
-(BETA, config.beta.plist)
-(DEVELOPMENT, config.development.plist)
-```
+If your build uses a build configuration called `Adhoc` you should create a `config.adhoc.plist` file with your adhoc specific values like `base_url` as  `stage.api.example.com` then when you build your adhoc build all references to `[CRUConfig sharedConfig].baseURL` would reference your staging server. In your `config.release.plist` file you could then define `base_url` as `api.example.com` so now your release builds will automatically point at your production server.
 
-Feel free to use any combination of them. If you don't use any it will fall back to config.default.plist or config.plist.
+You can create a config file for every build configuration in your project, even custom ones. If you don't use any of the build configuration specific config files the pod will fall back to `config.default.plist` or `config.plist`.
 
 It will try to access the files in this order:
 
-* The config file matching the current environment (the order of list above shows the order of importance if multiple enviroments are defined during any one build)
-* If none are defined it will try config.release.plist
-* If release doesn't exist it will try config.default.plist
-* If default doesn't exist it will try config.plist
+* The config file matching the current build configuration (e.g. `config.debug.plist`, always use lowercase in your filename, even if the configuration's name has capitals in the project)
+* If there isn't a config file for the current build configuration it will try `config.default.plist`
+* If `config.default.plist` doesn't exist it will try `config.plist`
 * If none of these options exist it will return empty values
 
 ###Adding extra config values
 
-You will likely have need more and/or different configuration values to the ones defined in `CRUConfig`. To add extra values, make a subclass of `CRUConfig`. If you hate the defaults in `CRUConfig` you can make a subclass of `CRUEmptyConfig` and you can start from scratch (`CRUConfig` is actually a subclass of `CRUEmptyConfig`).
+You will likely have need more and/or different configuration values to the ones defined in `CRUConfig`. To add extra values, make a subclass of `CRUConfig`. If you don't like the defaults in `CRUConfig` you can make a subclass of `CRUEmptyConfig` and you can start from scratch (`CRUConfig` is actually a subclass of `CRUEmptyConfig`).
 
 In your subclass's header add the properties you would like to use in your code. e.g.
 ```objc
@@ -93,6 +92,10 @@ OR
 MYAPI *myAPI = [MYAPI apiWithConfig:[CRUConfig sharedConfig]];
 ```
 
+###What are build configurations
+
+If you are not sure what a build configuration is, this article explains what they are [https://developer.apple.com/library/ios/recipes/xcode_help-project_editor/Articles/BasingBuildConfigurationsonConfigurationFiles.html](https://developer.apple.com/library/ios/recipes/xcode_help-project_editor/Articles/BasingBuildConfigurationsonConfigurationFiles.html). If you are confused about why you would need a CRUConfig when you already have a build configuration. Build configurations let you define values and settings that are needed at build time and the values in CRUConfig are available during run time.
+
 ## Installation
 
 CRUConfig is available through [CocoaPods](http://cocoapods.org). To install
@@ -101,26 +104,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "CRUConfig"
 ```
-
-###Adding Environment definitions to project configurations
-
-*Note:* If you are going to use this option you should be aware that at the time of writing cocoapods has an issue where it can't find the framework of this pod. To fix it you need to add the following value as a framework search path for your target's build setting: `$(SYMROOT)/Release$(EFFECTIVE_PLATFORM_NAME)`. [http://stackoverflow.com/a/35627389/399893](http://stackoverflow.com/a/35627389/399893)
-
-Instead of adding `#define ADHOC` into your code you can have your project inject them into your build via your build's configuration. Here is how you do that:
-
-Select your project file > Select your target > Select `Build Settings` > Search for `preprocessor`
-
-It should look like this
-![Build Settings](https://www.evernote.com/l/AF-trO4euXREHov8CWQRUmDVvue_S-FheyAB/image.png)
-
-Now under `Precompiler Macros` double click on the configuration you want to edit (for this example I'm editing Release) > Hit the `+` button in the bottom left corner of the popup > Type in the definition you would like to have injected. The #define part should be left off (for this example `RELEASE=1`)
-
-It should look like this
-![Precompiler Macros](https://www.evernote.com/l/AF9WsqOy0iFFeK-30RO8hQF6PUhdxj5oDGoB/image.png)
-
-Now we can create a config.release.plist file and CRUConfig (and its subclasses) will read from it when you make a build using the release configuration.
-
-If you want to add additional configurations for doing adhoc releases or other forms of QA follow this tutorial [Adding Build Configurations](https://developer.apple.com/library/ios/recipes/xcode_help-project_editor/Articles/BasingBuildConfigurationsonConfigurationFiles.html)
 
 ##The Example
 
