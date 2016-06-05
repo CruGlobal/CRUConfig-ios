@@ -13,7 +13,7 @@ e.g. If you are building your debug configuration it will look for config.debug.
 If you don't want to do configuration specific config files you can just use config.default.plist or config.plist.
 
 The order of priority is as follows:
- * config.<current build configuration name>.plist
+ * config.{current build configuration name}.plist
  * config.default.plist
  * config.plist
 
