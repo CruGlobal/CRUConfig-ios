@@ -9,6 +9,10 @@
 #import "CRUEmptyConfig.h"
 #import "CRUConfig+setter.h"
 
+#define STR(x) #x
+#define STRINGIFY(x) STR(x)
+#define CURRENT_BUILD_CONFIGURATION_STRING @ STRINGIFY(CRUCONFIG_CURRENT_BUILD_CONFIGURATION)
+
 @implementation CRUEmptyConfig
 
 + (instancetype)sharedConfig {
@@ -32,31 +36,7 @@
 	
 	if (self) {
 		
-		NSString *configFileName		= @"config.release";
-		
-#ifdef DEBUG
-		configFileName = @"config.debug";
-#endif
-		
-#ifdef BETA
-		configFileName = @"config.beta";
-#endif
-	
-#ifdef PRODUCTION
-		configFileName = @"config.production";
-#endif
-	
-#ifdef DEVELOPMENT
-		configFileName = @"config.development";
-#endif
-		
-#ifdef ADHOC
-		configFileName = @"config.adhoc";
-#endif
-		
-#ifdef RELEASE
-		configFileName = @"config.release";
-#endif
+		NSString *configFileName		= [NSString stringWithFormat:@"config.%@", CURRENT_BUILD_CONFIGURATION_STRING.lowercaseString];
 		
 		//read config file
 		NSString *configFilePath		= [[NSBundle mainBundle] pathForResource:configFileName ofType:@"plist"];

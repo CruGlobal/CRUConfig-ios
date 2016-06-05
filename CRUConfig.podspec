@@ -8,7 +8,6 @@
 
 Pod::Spec.new do |s|
   s.name             = "CRUConfig"
-  s.version          = "1.0.0"
   s.summary          = "CRUConfig is a wrapper to config.plist, prividing a easy way to get API keys out of your code."
 
 # This description is used to generate tags and improve search results.
@@ -17,6 +16,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
+  s.version          = "1.1.0"
   s.description      = <<-DESC
 CRUConfig is a wrapper to config.plist, prividing a easy way to get API keys out of your code, while having your IDE check the spelling of your keys now that they will be properites instead of stings. It is also environment based so you can define different config files for different environments.
 
@@ -39,5 +39,7 @@ The following pairs of enviroments and config files are available
   s.ios.deployment_target = '7.0'
 
   s.source_files = 'CRUConfig/Classes/**/*'
+
+s.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'CRUCONFIG_CURRENT_BUILD_CONFIGURATION=$(CONFIGURATION)' }
 
 end
