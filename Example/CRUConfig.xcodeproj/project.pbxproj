@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D500FA0D8F24ECFC16D995E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98B0426B4CE0F3C552D0E5 /* Pods.framework */; };
-		5C24439BC9FB9F516934DE7F /* Pods_CRUConfig_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68BAE4EA676A1F18AC25B2B9 /* Pods_CRUConfig_Tests.framework */; };
+		3600058542364D4BC361B748 /* Pods_CRUConfig_CRUConfig_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87547F76F8EBBC1E58EC4010 /* Pods_CRUConfig_CRUConfig_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -27,7 +26,7 @@
 		689063321CD26C85005A3575 /* config.beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689063301CD26C85005A3575 /* config.beta.plist */; };
 		689063331CD26C85005A3575 /* config.release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689063311CD26C85005A3575 /* config.release.plist */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		8B89666C6B61EEF4232BC298 /* Pods_CRUConfig_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D047048FE15BE92DFE5B253C /* Pods_CRUConfig_Example.framework */; };
+		A5CD661624E4CAAA4C62091B /* Pods_CRUConfig_CRUConfig_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE3BA55C2E6116FA1345FD5 /* Pods_CRUConfig_CRUConfig_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +42,7 @@
 /* Begin PBXFileReference section */
 		17F61D009AC962979B5F1151 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		28BCEAD3F40021A91FD7A1E7 /* CRUConfig.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CRUConfig.podspec; path = ../CRUConfig.podspec; sourceTree = "<group>"; };
-		48F81D0C36EE849EEB46C235 /* Pods-CRUConfig_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig_Tests/Pods-CRUConfig_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4E7A7AA83BDFC3015E5C618B /* Pods.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.beta.xcconfig; path = "Pods/Target Support Files/Pods/Pods.beta.xcconfig"; sourceTree = "<group>"; };
+		2DE3BA55C2E6116FA1345FD5 /* Pods_CRUConfig_CRUConfig_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRUConfig_CRUConfig_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* CRUConfig_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRUConfig_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,20 +61,21 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		605B5FB5B643BE56669E0427 /* Pods-CRUConfig-CRUConfig_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Tests/Pods-CRUConfig-CRUConfig_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		639EFF2E57AEE3256A79221D /* Pods-CRUConfig_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig_Tests/Pods-CRUConfig_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6890632B1CD26A8A005A3575 /* MYAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAPI.h; sourceTree = "<group>"; };
 		6890632C1CD26A8A005A3575 /* MYAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAPI.m; sourceTree = "<group>"; };
 		6890632E1CD26BF5005A3575 /* config.debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.debug.plist; sourceTree = "<group>"; };
 		689063301CD26C85005A3575 /* config.beta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.beta.plist; sourceTree = "<group>"; };
 		689063311CD26C85005A3575 /* config.release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.release.plist; sourceTree = "<group>"; };
-		68BAE4EA676A1F18AC25B2B9 /* Pods_CRUConfig_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRUConfig_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C7C5AF5CDC97372B413B614 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7F98B0426B4CE0F3C552D0E5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81319ADCB2AA6BD565F21BA6 /* Pods-CRUConfig-CRUConfig_Example.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Example.beta.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Example/Pods-CRUConfig-CRUConfig_Example.beta.xcconfig"; sourceTree = "<group>"; };
+		836105295A2F428DE91B918A /* Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Tests/Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8A68748BD7A18FA5CA06EE4B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		D047048FE15BE92DFE5B253C /* Pods_CRUConfig_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRUConfig_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7068A15281A78452DE8083B /* Pods-CRUConfig_Tests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig_Tests.beta.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig_Tests/Pods-CRUConfig_Tests.beta.xcconfig"; sourceTree = "<group>"; };
+		87547F76F8EBBC1E58EC4010 /* Pods_CRUConfig_CRUConfig_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRUConfig_CRUConfig_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F08A5C54A08E2C0B304890 /* Pods-CRUConfig-CRUConfig_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Example/Pods-CRUConfig-CRUConfig_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9825F73177B63A3CF9989E68 /* Pods-CRUConfig-CRUConfig_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Example/Pods-CRUConfig-CRUConfig_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DE2F1F4801AC6CD85184D70F /* Pods-CRUConfig-CRUConfig_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Tests/Pods-CRUConfig-CRUConfig_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F0C51D3375E277ECE06B7C7C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,8 +87,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				8B89666C6B61EEF4232BC298 /* Pods_CRUConfig_Example.framework in Frameworks */,
-				1D500FA0D8F24ECFC16D995E /* Pods.framework in Frameworks */,
+				A5CD661624E4CAAA4C62091B /* Pods_CRUConfig_CRUConfig_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +98,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				5C24439BC9FB9F516934DE7F /* Pods_CRUConfig_Tests.framework in Frameworks */,
+				3600058542364D4BC361B748 /* Pods_CRUConfig_CRUConfig_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +113,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				A0149C5BE2A07E7D9AEA3662 /* Pods */,
+				7D971B6F3CE5DBB66E4AD71F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +133,9 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				D047048FE15BE92DFE5B253C /* Pods_CRUConfig_Example.framework */,
-				68BAE4EA676A1F18AC25B2B9 /* Pods_CRUConfig_Tests.framework */,
 				7F98B0426B4CE0F3C552D0E5 /* Pods.framework */,
+				2DE3BA55C2E6116FA1345FD5 /* Pods_CRUConfig_CRUConfig_Example.framework */,
+				87547F76F8EBBC1E58EC4010 /* Pods_CRUConfig_CRUConfig_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,15 +200,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		A0149C5BE2A07E7D9AEA3662 /* Pods */ = {
+		7D971B6F3CE5DBB66E4AD71F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				639EFF2E57AEE3256A79221D /* Pods-CRUConfig_Tests.debug.xcconfig */,
-				48F81D0C36EE849EEB46C235 /* Pods-CRUConfig_Tests.release.xcconfig */,
-				8A68748BD7A18FA5CA06EE4B /* Pods.debug.xcconfig */,
-				6C7C5AF5CDC97372B413B614 /* Pods.release.xcconfig */,
-				4E7A7AA83BDFC3015E5C618B /* Pods.beta.xcconfig */,
-				E7068A15281A78452DE8083B /* Pods-CRUConfig_Tests.beta.xcconfig */,
+				9825F73177B63A3CF9989E68 /* Pods-CRUConfig-CRUConfig_Example.debug.xcconfig */,
+				97F08A5C54A08E2C0B304890 /* Pods-CRUConfig-CRUConfig_Example.release.xcconfig */,
+				81319ADCB2AA6BD565F21BA6 /* Pods-CRUConfig-CRUConfig_Example.beta.xcconfig */,
+				605B5FB5B643BE56669E0427 /* Pods-CRUConfig-CRUConfig_Tests.debug.xcconfig */,
+				DE2F1F4801AC6CD85184D70F /* Pods-CRUConfig-CRUConfig_Tests.release.xcconfig */,
+				836105295A2F428DE91B918A /* Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -222,12 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "CRUConfig_Example" */;
 			buildPhases = (
-				9D51728705DFC470BA39D3AD /* Check Pods Manifest.lock */,
+				72436764EF1944FDADC75982 /* 📦 Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				B3E2E3F9F61E7CFBE363D9A0 /* Embed Pods Frameworks */,
-				404E513B51FB124D8C4B9FD5 /* Copy Pods Resources */,
+				EB0942714410C3F0B3A3D4A0 /* 📦 Embed Pods Frameworks */,
+				CECDC74D487CBD5E66AB8E85 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,12 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CRUConfig_Tests" */;
 			buildPhases = (
-				BE127550C84BDDDEB05C613D /* Check Pods Manifest.lock */,
+				F04E97AA86D6A090C8C61CC1 /* 📦 Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				5B9615A302EB0A83925D3252 /* Embed Pods Frameworks */,
-				CC8637EB32B1201447D5A5C1 /* Copy Pods Resources */,
+				DFD860CD27AE93D5BD61027E /* 📦 Embed Pods Frameworks */,
+				F1C7AF893B4095FA3C989DF0 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -318,44 +316,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		404E513B51FB124D8C4B9FD5 /* Copy Pods Resources */ = {
+		72436764EF1944FDADC75982 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5B9615A302EB0A83925D3252 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRUConfig_Tests/Pods-CRUConfig_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9D51728705DFC470BA39D3AD /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,29 +331,59 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B3E2E3F9F61E7CFBE363D9A0 /* Embed Pods Frameworks */ = {
+		CECDC74D487CBD5E66AB8E85 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Example/Pods-CRUConfig-CRUConfig_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BE127550C84BDDDEB05C613D /* Check Pods Manifest.lock */ = {
+		DFD860CD27AE93D5BD61027E /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Tests/Pods-CRUConfig-CRUConfig_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB0942714410C3F0B3A3D4A0 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Example/Pods-CRUConfig-CRUConfig_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F04E97AA86D6A090C8C61CC1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,19 +391,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		CC8637EB32B1201447D5A5C1 /* Copy Pods Resources */ = {
+		F1C7AF893B4095FA3C989DF0 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRUConfig_Tests/Pods-CRUConfig_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Tests/Pods-CRUConfig-CRUConfig_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -535,11 +533,14 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A68748BD7A18FA5CA06EE4B /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 9825F73177B63A3CF9989E68 /* Pods-CRUConfig-CRUConfig_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = "$(SYMROOT)/Release$(EFFECTIVE_PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SYMROOT)/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(inherited)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CRUConfig/CRUConfig-Prefix.pch";
 				INFOPLIST_FILE = "CRUConfig/CRUConfig-Info.plist";
@@ -552,11 +553,14 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C7C5AF5CDC97372B413B614 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 97F08A5C54A08E2C0B304890 /* Pods-CRUConfig-CRUConfig_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = "$(SYMROOT)/Release$(EFFECTIVE_PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SYMROOT)/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(inherited)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CRUConfig/CRUConfig-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -574,7 +578,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 639EFF2E57AEE3256A79221D /* Pods-CRUConfig_Tests.debug.xcconfig */;
+			baseConfigurationReference = 605B5FB5B643BE56669E0427 /* Pods-CRUConfig-CRUConfig_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -598,7 +602,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48F81D0C36EE849EEB46C235 /* Pods-CRUConfig_Tests.release.xcconfig */;
+			baseConfigurationReference = DE2F1F4801AC6CD85184D70F /* Pods-CRUConfig-CRUConfig_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -651,11 +655,14 @@
 		};
 		689063351CD26D06005A3575 /* Beta */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E7A7AA83BDFC3015E5C618B /* Pods.beta.xcconfig */;
+			baseConfigurationReference = 81319ADCB2AA6BD565F21BA6 /* Pods-CRUConfig-CRUConfig_Example.beta.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = "$(SYMROOT)/Release$(EFFECTIVE_PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SYMROOT)/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(inherited)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CRUConfig/CRUConfig-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -673,7 +680,7 @@
 		};
 		689063361CD26D06005A3575 /* Beta */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7068A15281A78452DE8083B /* Pods-CRUConfig_Tests.beta.xcconfig */;
+			baseConfigurationReference = 836105295A2F428DE91B918A /* Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

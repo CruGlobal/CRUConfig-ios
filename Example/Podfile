@@ -1,12 +1,15 @@
 use_frameworks!
 
-xcodeproj 'CRUConfig', 'CRUConfig-Example' => :release, 'CRUConfig-Example-Beta' => :release, 'CRUConfig-Example-Release' => :release
+abstract_target 'CRUConfig' do
 
-pod 'CRUConfig', :path => '../'
+	pod 'CRUConfig', :path => '../'
+	
+	target 'CRUConfig_Example' do
+		project 'CRUConfig', 'CRUConfig-Example' => :release, 'CRUConfig-Example-Beta' => :release, 'CRUConfig-Example-Release' => :release
+	end
 
-target 'CRUConfig_Tests', :exclusive => true do
-  pod 'CRUConfig', :path => '../'
-
-  pod 'Specta'
-  pod 'Expecta'
+	target 'CRUConfig_Tests' do
+	  pod 'Specta'
+	  pod 'Expecta'
+	end
 end

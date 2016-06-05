@@ -1,5 +1,5 @@
 PODS:
-  - CRUConfig (1.0.0)
+  - CRUConfig (1.1.0)
   - Expecta (1.0.5)
   - Specta (1.0.5)
 
@@ -13,8 +13,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CRUConfig: a04146e35ba2bb37f1b0869746f656477047231b
+  CRUConfig: e9f8fd1a6b46b117db53ff8d50287d8e6cd71a7b
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: cd93f5ca67a2733da690827f6d2d1a7903f0b2ae
+
+COCOAPODS: 1.0.0
