@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "CRUConfig"
   s.version          = "1.1.0"
-  s.summary          = "CRUConfig is an objc implementation of dotenv. It provides a wrapper to config.plist, giving you an easy way to get API keys and urls out of your code."
+  s.summary          = "CRUConfig is an objc implementation of dotenv. It is a wrapper to config.plist, giving you an easy way to get API keys out of your code."
   s.description      = <<-DESC
 CRUConfig is an objc implementation of dotenv. It provides a wrapper to config.plist, giving you an easy way to get API keys and urls out of your code, while having your IDE autocomplete your values now that they will be properites instead of stings. It is also environment based so you can define different config files for different environments.
 
