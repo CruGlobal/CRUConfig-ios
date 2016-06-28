@@ -10,6 +10,12 @@
 
 @interface CRUEmptyConfig : NSObject
 
+/**
+ *  The name of the build configuration in lowercase.
+ *  e.g. If you build a target using the `Release` build configuration configurationName will be release
+ */
+@property (nonatomic, strong, readonly) NSString *configurationName;
+
 + (instancetype)sharedConfig;
 
 @end

@@ -36,17 +36,18 @@
 	
 	if (self) {
 		
-		NSString *configFileName		= [NSString stringWithFormat:@"config.%@", CURRENT_BUILD_CONFIGURATION_STRING.lowercaseString];
+		_configurationName			= CURRENT_BUILD_CONFIGURATION_STRING.lowercaseString;
+		NSString *configFileName	= [NSString stringWithFormat:@"config.%@", self.configurationName];
 		
 		//read config file
-		NSString *configFilePath		= [[NSBundle mainBundle] pathForResource:configFileName ofType:@"plist"];
+		NSString *configFilePath	= [[NSBundle mainBundle] pathForResource:configFileName ofType:@"plist"];
 		
 		if (!configFilePath) {
-			configFilePath		= [[NSBundle mainBundle] pathForResource:@"config.default" ofType:@"plist"];
+			configFilePath			= [[NSBundle mainBundle] pathForResource:@"config.default" ofType:@"plist"];
 		}
 		
 		if (!configFilePath) {
-			configFilePath		= [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
+			configFilePath			= [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
 		}
 		
 		NSDictionary *configDictionary	= [NSDictionary dictionaryWithContentsOfFile:configFilePath] ?: @{};

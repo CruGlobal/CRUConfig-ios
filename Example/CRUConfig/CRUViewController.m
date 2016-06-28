@@ -34,7 +34,7 @@
 
 - (IBAction)login:(id)sender {
 	
-	UIAlertController *loginAlert = [UIAlertController alertControllerWithTitle:@"Login"
+	UIAlertController *loginAlert = [UIAlertController alertControllerWithTitle:[@"Login for configuration: " stringByAppendingString:[CRUConfig sharedConfig].configurationName]
 																		message:[NSString stringWithFormat:@"logged into %@", self.myAPI.baseURL.absoluteString]
 																 preferredStyle:UIAlertControllerStyleAlert];
 	
