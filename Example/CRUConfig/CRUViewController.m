@@ -23,7 +23,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-	self.myAPI = [[MYAPI alloc] initWithConfig:[CRUConfig sharedConfig]];
+	self.myAPI = [[MYAPI alloc] initWithConfig:[CRUConfigDemoConfig sharedConfig]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,7 +34,7 @@
 
 - (IBAction)login:(id)sender {
 	
-	UIAlertController *loginAlert = [UIAlertController alertControllerWithTitle:[@"Login for configuration: " stringByAppendingString:[CRUConfig sharedConfig].configurationName]
+	UIAlertController *loginAlert = [UIAlertController alertControllerWithTitle:[@"Login for configuration: " stringByAppendingString:[CRUConfigDemoConfig sharedConfig].configurationName]
 																		message:[NSString stringWithFormat:@"logged into %@", self.myAPI.baseURL.absoluteString]
 																 preferredStyle:UIAlertControllerStyleAlert];
 	

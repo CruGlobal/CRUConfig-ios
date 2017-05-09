@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CRUConfig/CRUConfig.h>
+#import "CRUConfigDemoConfig.h"
 
 @interface MYAPI : NSObject
 
 @property (nonatomic, strong) NSURL *baseURL;
 
-- (instancetype)initWithConfig:(CRUConfig *)config;
+- (instancetype)initWithConfig:(CRUConfigDemoConfig *)config;
 
 @end

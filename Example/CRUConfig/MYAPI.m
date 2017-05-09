@@ -10,7 +10,7 @@
 
 @implementation MYAPI
 
-- (instancetype)initWithConfig:(CRUConfig *)config {
+- (instancetype)initWithConfig:(CRUConfigDemoConfig *)config {
 	
 	self = [super init];
 	if (!self) {

@@ -21,6 +21,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		681CF5DA1EC0E27B00C83A1A /* CRUConfigDemoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 681CF5D91EC0E27B00C83A1A /* CRUConfigDemoConfig.m */; };
 		6890632D1CD26A8A005A3575 /* MYAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6890632C1CD26A8A005A3575 /* MYAPI.m */; };
 		6890632F1CD26BF5005A3575 /* config.debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6890632E1CD26BF5005A3575 /* config.debug.plist */; };
 		689063321CD26C85005A3575 /* config.beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689063301CD26C85005A3575 /* config.beta.plist */; };
@@ -63,6 +64,8 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		605B5FB5B643BE56669E0427 /* Pods-CRUConfig-CRUConfig_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Tests/Pods-CRUConfig-CRUConfig_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		681CF5D81EC0E27B00C83A1A /* CRUConfigDemoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUConfigDemoConfig.h; sourceTree = "<group>"; };
+		681CF5D91EC0E27B00C83A1A /* CRUConfigDemoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUConfigDemoConfig.m; sourceTree = "<group>"; };
 		6890632B1CD26A8A005A3575 /* MYAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAPI.h; sourceTree = "<group>"; };
 		6890632C1CD26A8A005A3575 /* MYAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAPI.m; sourceTree = "<group>"; };
 		6890632E1CD26BF5005A3575 /* config.debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.debug.plist; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* CRUConfig-Prefix.pch */,
+				681CF5D81EC0E27B00C83A1A /* CRUConfigDemoConfig.h */,
+				681CF5D91EC0E27B00C83A1A /* CRUConfigDemoConfig.m */,
 				6890632E1CD26BF5005A3575 /* config.debug.plist */,
 				689063301CD26C85005A3575 /* config.beta.plist */,
 				689063311CD26C85005A3575 /* config.release.plist */,
@@ -264,7 +269,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CRU;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Harro;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -414,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* CRUAppDelegate.m in Sources */,
+				681CF5DA1EC0E27B00C83A1A /* CRUConfigDemoConfig.m in Sources */,
 				6003F5A7195388D20070C39A /* CRUViewController.m in Sources */,
 				6890632D1CD26A8A005A3575 /* MYAPI.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -471,14 +477,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -511,13 +522,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -633,13 +649,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
