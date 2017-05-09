@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (t)
+@interface NSString (CaseTransformations)
 
 - (NSString *)snakeCaseToCamelCase;
 
