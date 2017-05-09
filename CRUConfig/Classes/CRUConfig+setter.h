@@ -8,7 +8,7 @@
 
 #import "CRUConfig.h"
 
-@interface CRUConfig (setter)
+@interface CRUEmptyConfig (setter)
 
 - (void)setPropertiesWithContentsOfConfigDictionary:(NSDictionary *)configDictionary;
 
