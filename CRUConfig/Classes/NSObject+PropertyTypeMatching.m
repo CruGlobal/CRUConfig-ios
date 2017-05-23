@@ -11,7 +11,7 @@
 
 @implementation NSObject (PropertyTypeMatching)
 
-- (id)convertValue:(id)value toTypeMatchingPropertyWithName:(NSString * _Nonnull)propertyName {
+- (id)convertValue:(id)value toTypeOfPropertyWithName:(NSString * _Nonnull)propertyName {
     
     if (!value) {
         return nil;

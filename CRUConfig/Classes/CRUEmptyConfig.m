@@ -77,7 +77,7 @@
             return;
         }
         
-        id convertedValue = [self convertValue:value toTypeMatchingPropertyWithName:propertyName];
+        id convertedValue = [self convertValue:value toTypeOfPropertyWithName:propertyName];
         
         if (!convertedValue) {
             return;

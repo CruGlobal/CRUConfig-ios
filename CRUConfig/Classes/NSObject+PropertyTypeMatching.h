@@ -10,6 +10,6 @@
 
 @interface NSObject (PropertyTypeMatching)
 
-- (id _Nullable)convertValue:(id _Nullable)value toTypeMatchingPropertyWithName:(NSString * _Nonnull)propertyName;
+- (id _Nullable)convertValue:(id _Nullable)value toTypeOfPropertyWithName:(NSString * _Nonnull)propertyName;
 
 @end
