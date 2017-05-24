@@ -2,13 +2,17 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
+env:
+ - secure: "zkW6InrVp/Iq9QyEfMX3JUo1B9bz0Q1b9kigzaD0VY39BFuXU30uVLXkAU2N1MmdBQfZZgajUJndBeEw9KWAB/yfZQhzcJe6gIfH/xrIZlsISMO2eC08Rnw2zk8os0EgO5k936XUiHoFe4CyShi5/QXxHdKmkjQhyPAGRed8xOaSWYEslTwDf05G/TnupZ+/6YNCXLFgCYE/EsixrH7Kxdxu71vSIBLGqL/G6r6gmYQ4R5lAmFHXHt2whLfnNbrDJusKOrJFqXC+9LYR9f+V6D3jX+h6QyiiDUxNnSjabZdN9G8VMgGgQjAClhKsUEkbDk83Nm+F/bMWNSQF+5QWI6pJiqcqP0gigFt4+h6aO33LXhzbpy83ybz+YlPLT7Nymi2k5R5udIev0VUTmX6eoCqx4QhIkyw/msyLbQJ6q+r9OyvdbrrgtgKvRxZuiduXlxsFTU6cSs3/7ba32KQZe6tFmnotCi27cNLTSvEJevOakZ90M9gcDLaYzKv9hGrjN6XAyqh01i2v5y3WikBlme7vhQp40Yt0PVp7DZ7GIYqL5j/Rxgyt5s9ZYvk3+Q7He8grx+1SGQ4EWkAFJUwf1G9Nneh0GAzFn3S+iBMQWhOTT5uTAXR7zsKjmpNzlLe3Vc28qnoipxYBXfTSLi3vPIzHY4d8VShss05FuKYgyMw="
 osx_image: xcode8.3
 language: objective-c
 cache: cocoapods
 podfile: Example/Podfile
 before_install:
  - gem install cocoapods # Since Travis is not always on latest version
+ - gem install xcov
  - pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild test -workspace Example/CRUConfig.xcworkspace -scheme CRUConfig-Example -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+- xcov -w Example/CRUConfig.xcworkspace -s CRUConfig-Example --include_targets CRUConfig.framework 
 - pod lib lint
