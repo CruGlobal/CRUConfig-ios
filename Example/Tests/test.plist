@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>number_array</key>
+	<array>
+		<integer>1</integer>
+		<integer>-1</integer>
+	</array>
+	<key>direction_dictionary</key>
+	<dict>
+		<key>negative</key>
+		<string>-1</string>
+		<key>positive</key>
+		<string>1</string>
+	</dict>
+	<key>myBoolean</key>
+	<true/>
+	<key>DATAINTHEHOUSE</key>
+	<data>bXkgYW1hemluZyBkYXRhIGJsb2I=</data>
+	<key>date</key>
+	<date>2017-05-24T19:46:02Z</date>
+	<key>medium_number</key>
+	<real>87342345</real>
+	<key>myAmazingString</key>
+	<string>my amazing string</string>
+</dict>
+</plist>

@@ -27,6 +27,9 @@
 		689063321CD26C85005A3575 /* config.beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689063301CD26C85005A3575 /* config.beta.plist */; };
 		689063331CD26C85005A3575 /* config.release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689063311CD26C85005A3575 /* config.release.plist */; };
 		68C0A3881ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0A3871ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m */; };
+		68C0A38A1ED61A4D00CC97A3 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68C0A3891ED61A4D00CC97A3 /* test.plist */; };
+		68C0A38D1ED61BDE00CC97A3 /* CRUEmptyConfigTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0A38C1ED61BDE00CC97A3 /* CRUEmptyConfigTest.m */; };
+		68C0A38F1ED61D6000CC97A3 /* CRUEmptyConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0A38E1ED61D6000CC97A3 /* CRUEmptyConfigTests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A5CD661624E4CAAA4C62091B /* Pods_CRUConfig_CRUConfig_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE3BA55C2E6116FA1345FD5 /* Pods_CRUConfig_CRUConfig_Example.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +76,10 @@
 		689063301CD26C85005A3575 /* config.beta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.beta.plist; sourceTree = "<group>"; };
 		689063311CD26C85005A3575 /* config.release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.release.plist; sourceTree = "<group>"; };
 		68C0A3871ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectPropertyTypeMatchingTests.m; sourceTree = "<group>"; };
+		68C0A3891ED61A4D00CC97A3 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
+		68C0A38B1ED61BDE00CC97A3 /* CRUEmptyConfigTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUEmptyConfigTest.h; sourceTree = "<group>"; };
+		68C0A38C1ED61BDE00CC97A3 /* CRUEmptyConfigTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUEmptyConfigTest.m; sourceTree = "<group>"; };
+		68C0A38E1ED61D6000CC97A3 /* CRUEmptyConfigTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUEmptyConfigTests.m; sourceTree = "<group>"; };
 		7F98B0426B4CE0F3C552D0E5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81319ADCB2AA6BD565F21BA6 /* Pods-CRUConfig-CRUConfig_Example.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Example.beta.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Example/Pods-CRUConfig-CRUConfig_Example.beta.xcconfig"; sourceTree = "<group>"; };
 		836105295A2F428DE91B918A /* Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Tests/Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +188,7 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				68C0A38E1ED61D6000CC97A3 /* CRUEmptyConfigTests.m */,
 				6003F5BB195388D20070C39A /* NSStringCaseTransformationsTests.m */,
 				68C0A3871ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
@@ -194,6 +202,9 @@
 				6003F5B7195388D20070C39A /* Tests-Info.plist */,
 				6003F5B8195388D20070C39A /* InfoPlist.strings */,
 				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+				68C0A3891ED61A4D00CC97A3 /* test.plist */,
+				68C0A38B1ED61BDE00CC97A3 /* CRUEmptyConfigTest.h */,
+				68C0A38C1ED61BDE00CC97A3 /* CRUEmptyConfigTest.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -317,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C0A38A1ED61A4D00CC97A3 /* test.plist in Resources */,
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +446,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BC195388D20070C39A /* NSStringCaseTransformationsTests.m in Sources */,
+				68C0A38D1ED61BDE00CC97A3 /* CRUEmptyConfigTest.m in Sources */,
+				68C0A38F1ED61D6000CC97A3 /* CRUEmptyConfigTests.m in Sources */,
 				68C0A3881ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
