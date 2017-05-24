@@ -11,6 +11,10 @@
 
 @implementation NSObject (PropertyTypeMatching)
 
++ (NSString *)dateFormat {
+    return @"yyyy-MM-dd HH:mm:ss zzz";
+}
+
 - (id)convertValue:(id)value toTypeOfPropertyWithName:(NSString * _Nonnull)propertyName {
     
     if (!value) {
@@ -97,6 +101,7 @@
         return date;
     } else if (type == NSString.class) {
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = self.dateFormat;
         return [dateFormatter stringFromDate:date];
     } else {
         return nil;
@@ -112,6 +117,7 @@
         return [[NSNumber alloc] initWithDouble:string.doubleValue];
     }  else if (type == NSDate.class) {
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = self.dateFormat;
         return [dateFormatter dateFromString:string];
     }  else if (type == NSData.class) {
         return [string dataUsingEncoding:NSUTF8StringEncoding];

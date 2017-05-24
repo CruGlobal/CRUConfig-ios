@@ -103,9 +103,9 @@ Once it has found the property that matches the key it will attempt to convert t
 | `Dictionary`    | `NSDictionary`          |  |
 | `Boolean`       | `NSNumber`              |  |
 | `Data`          | `NSData`, `NSString`    | Uses UTF8 encoding for conversion |
-| `Date`          | `NSDate`, `NSString`    | Uses default NSDateFormatter settings for date conversions |
+| `Date`          | `NSDate`, `NSString`    | Uses `yyyy-MM-dd HH:mm:ss zzz` date format for date conversions (can be changed by overriding dateFormat method in NSObject+PropertyTypeMatching category) |
 | `Number`        | `NSNumber`, `NSString`  | Uses the stringValue method on number for string conversion |
-| `String`        | `NSString`, `NSURL`, `NSDate`, `NSData`, `NSNumber` | Uses UTF8 encoding for data conversion, Uses default NSDateFormatter settings for date conversions, Uses the double representation when storing the number in NSNumber |
+| `String`        | `NSString`, `NSURL`, `NSDate`, `NSData`, `NSNumber` | Uses UTF8 encoding for data conversion, Uses `yyyy-MM-dd HH:mm:ss zzz` date format for date conversions (can be changed by overriding dateFormat method in NSObject+PropertyTypeMatching category), Uses the double representation when storing the number in NSNumber |
 
 Note that the only supported property types are NS Foundation types. If you need to load your values into a primative type or your values refuse to load look at the [Advanced Loading](#advanced-loading) section for ways to load those values manually.
 
