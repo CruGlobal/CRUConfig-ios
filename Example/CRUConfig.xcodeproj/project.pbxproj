@@ -239,12 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "CRUConfig_Example" */;
 			buildPhases = (
-				72436764EF1944FDADC75982 /* 📦 Check Pods Manifest.lock */,
+				72436764EF1944FDADC75982 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				EB0942714410C3F0B3A3D4A0 /* 📦 Embed Pods Frameworks */,
-				CECDC74D487CBD5E66AB8E85 /* 📦 Copy Pods Resources */,
+				EB0942714410C3F0B3A3D4A0 /* [CP] Embed Pods Frameworks */,
+				CECDC74D487CBD5E66AB8E85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,12 +259,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CRUConfig_Tests" */;
 			buildPhases = (
-				F04E97AA86D6A090C8C61CC1 /* 📦 Check Pods Manifest.lock */,
+				F04E97AA86D6A090C8C61CC1 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				DFD860CD27AE93D5BD61027E /* 📦 Embed Pods Frameworks */,
-				F1C7AF893B4095FA3C989DF0 /* 📦 Copy Pods Resources */,
+				DFD860CD27AE93D5BD61027E /* [CP] Embed Pods Frameworks */,
+				F1C7AF893B4095FA3C989DF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,29 +336,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		72436764EF1944FDADC75982 /* 📦 Check Pods Manifest.lock */ = {
+		72436764EF1944FDADC75982 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		CECDC74D487CBD5E66AB8E85 /* 📦 Copy Pods Resources */ = {
+		CECDC74D487CBD5E66AB8E85 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,14 +366,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Example/Pods-CRUConfig-CRUConfig_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DFD860CD27AE93D5BD61027E /* 📦 Embed Pods Frameworks */ = {
+		DFD860CD27AE93D5BD61027E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,14 +381,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Tests/Pods-CRUConfig-CRUConfig_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB0942714410C3F0B3A3D4A0 /* 📦 Embed Pods Frameworks */ = {
+		EB0942714410C3F0B3A3D4A0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,29 +396,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Example/Pods-CRUConfig-CRUConfig_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F04E97AA86D6A090C8C61CC1 /* 📦 Check Pods Manifest.lock */ = {
+		F04E97AA86D6A090C8C61CC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F1C7AF893B4095FA3C989DF0 /* 📦 Copy Pods Resources */ = {
+		F1C7AF893B4095FA3C989DF0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,6 +578,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CRUConfig/CRUConfig-Prefix.pch";
 				INFOPLIST_FILE = "CRUConfig/CRUConfig-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -603,6 +604,7 @@
 					"RELEASE=1",
 				);
 				INFOPLIST_FILE = "CRUConfig/CRUConfig-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -710,6 +712,7 @@
 					"BETA=1",
 				);
 				INFOPLIST_FILE = "CRUConfig/CRUConfig-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
