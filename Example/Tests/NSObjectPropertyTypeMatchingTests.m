@@ -85,6 +85,34 @@ describe(@"value conversion for edge cases", ^{
 
 });
 
+describe(@"value conversion from NSDate", ^{
+    
+    __block NSString *regularTestDateAsString = @"2017-05-24 15:31:29 UTC";
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = [NSObject dateFormat];
+    __block NSDate *regularTestDate = [dateFormatter dateFromString:regularTestDateAsString];
+    __block PropertyTest *propertyObject = nil;
+    
+    beforeEach(^{
+        propertyObject = [[PropertyTest alloc] init];
+    });
+    
+    it(@"will succeed when converting a regular date for property of type NSDate", ^{
+        expect([propertyObject convertValue:regularTestDate toTypeOfPropertyWithName:@"dateProperty"]).to.equal(regularTestDate);
+    });
+    
+    it(@"will succeed when converting a number string for property of type NSString", ^{
+        id convertedValue = [propertyObject convertValue:regularTestDate toTypeOfPropertyWithName:@"stringProperty"];
+        expect(convertedValue).to.beKindOf([NSString class]);
+        expect(convertedValue).to.equal(@"2017-05-24 15:31:29 GMT");
+    });
+    
+    it(@"will return nil when converting a regular date for property of type NSArray", ^{
+        id convertedValue = [propertyObject convertValue:regularTestDateAsString toTypeOfPropertyWithName:@"arrayProperty"];
+        expect(convertedValue).to.beNil();
+    });
+});
+
 describe(@"value conversion from NSNumber", ^{
     
     __block NSNumber *regularTestNumber = @56.8;
