@@ -1,6 +1,6 @@
 # CRUConfig
 
-[![CI Status](http://img.shields.io/travis/CruGlobal/CRUConfig.svg?style=flat)](https://travis-ci.org/CruGlobal/CRUConfig)
+[![CI Status](http://img.shields.io/travis/CruGlobal/CRUConfig-ios.svg?style=flat)](https://travis-ci.org/CruGlobal/CRUConfig-ios)
 [![Version](https://img.shields.io/cocoapods/v/CRUConfig.svg?style=flat)](http://cocoapods.org/pods/CRUConfig)
 [![License](https://img.shields.io/cocoapods/l/CRUConfig.svg?style=flat)](http://cocoapods.org/pods/CRUConfig)
 [![Platform](https://img.shields.io/cocoapods/p/CRUConfig.svg?style=flat)](http://cocoapods.org/pods/CRUConfig)
@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 pod "CRUConfig"
 ```
 
-##The Example
+## The Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
