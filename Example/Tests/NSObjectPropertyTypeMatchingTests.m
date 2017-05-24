@@ -85,6 +85,32 @@ describe(@"value conversion for edge cases", ^{
 
 });
 
+describe(@"value conversion from NSNumber", ^{
+    
+    __block NSNumber *regularTestNumber = @56.8;
+    __block NSString *stringTestNumberAsString = @"56.8";
+    __block PropertyTest *propertyObject = nil;
+    
+    beforeEach(^{
+        propertyObject = [[PropertyTest alloc] init];
+    });
+    
+    it(@"will succeed when converting a regular string for property of type NSNumber", ^{
+        expect([propertyObject convertValue:regularTestNumber toTypeOfPropertyWithName:@"numberProperty"]).to.equal(regularTestNumber);
+    });
+    
+    it(@"will succeed when converting a number string for property of type NSString", ^{
+        id convertedValue = [propertyObject convertValue:regularTestNumber toTypeOfPropertyWithName:@"stringProperty"];
+        expect(convertedValue).to.beKindOf([NSString class]);
+        expect(convertedValue).to.equal(stringTestNumberAsString);
+    });
+    
+    it(@"will return nil when converting a regular number for property of type NSArray", ^{
+        id convertedValue = [propertyObject convertValue:regularTestNumber toTypeOfPropertyWithName:@"arrayProperty"];
+        expect(convertedValue).to.beNil();
+    });
+});
+
 describe(@"value conversion from NSString", ^{
     
     __block NSString *regularTestString = @"my-regular-string";
