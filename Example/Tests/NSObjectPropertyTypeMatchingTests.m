@@ -179,7 +179,7 @@ describe(@"value conversion from NSDate", ^{
     });
     
     it(@"will return nil when converting a regular date for property of type NSArray", ^{
-        id convertedValue = [propertyObject convertValue:regularTestDateAsString toTypeOfPropertyWithName:@"arrayProperty"];
+        id convertedValue = [propertyObject convertValue:regularTestDate toTypeOfPropertyWithName:@"arrayProperty"];
         expect(convertedValue).to.beNil();
     });
 });
