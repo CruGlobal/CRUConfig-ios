@@ -26,6 +26,7 @@
 		6890632F1CD26BF5005A3575 /* config.debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6890632E1CD26BF5005A3575 /* config.debug.plist */; };
 		689063321CD26C85005A3575 /* config.beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689063301CD26C85005A3575 /* config.beta.plist */; };
 		689063331CD26C85005A3575 /* config.release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689063311CD26C85005A3575 /* config.release.plist */; };
+		68C0A3881ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0A3871ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A5CD661624E4CAAA4C62091B /* Pods_CRUConfig_CRUConfig_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE3BA55C2E6116FA1345FD5 /* Pods_CRUConfig_CRUConfig_Example.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		6890632E1CD26BF5005A3575 /* config.debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.debug.plist; sourceTree = "<group>"; };
 		689063301CD26C85005A3575 /* config.beta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.beta.plist; sourceTree = "<group>"; };
 		689063311CD26C85005A3575 /* config.release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.release.plist; sourceTree = "<group>"; };
+		68C0A3871ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectPropertyTypeMatchingTests.m; sourceTree = "<group>"; };
 		7F98B0426B4CE0F3C552D0E5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81319ADCB2AA6BD565F21BA6 /* Pods-CRUConfig-CRUConfig_Example.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Example.beta.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Example/Pods-CRUConfig-CRUConfig_Example.beta.xcconfig"; sourceTree = "<group>"; };
 		836105295A2F428DE91B918A /* Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Tests/Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				6003F5BB195388D20070C39A /* NSStringCaseTransformationsTests.m */,
+				68C0A3871ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -431,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BC195388D20070C39A /* NSStringCaseTransformationsTests.m in Sources */,
+				68C0A3881ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
