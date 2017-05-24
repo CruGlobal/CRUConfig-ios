@@ -15,6 +15,10 @@
     return @"yyyy-MM-dd HH:mm:ss zzz";
 }
 
++ (NSString *)timeZone {
+    return @"UTC";
+}
+
 - (id)convertValue:(id)value toTypeOfPropertyWithName:(NSString * _Nonnull)propertyName {
     
     if (!value) {
@@ -101,6 +105,7 @@
         return date;
     } else if (type == NSString.class) {
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:self.timeZone];
         dateFormatter.dateFormat = self.dateFormat;
         return [dateFormatter stringFromDate:date];
     } else {
