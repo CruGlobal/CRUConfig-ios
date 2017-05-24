@@ -25,7 +25,65 @@
 
 @end
 
+@interface PrimitivePropertyTest: PropertyTest
+
+@property (nonatomic, assign) BOOL booleanProperty;
+@property (nonatomic, assign) NSInteger integerProperty;
+@property (nonatomic, assign) double doubleProperty;
+
+@end
+
+@implementation PrimitivePropertyTest
+
+@end
+
 SpecBegin(NSObjectPropertyTypeMatchingSpecs)
+
+describe(@"value conversion for edge cases", ^{
+
+    __block PropertyTest *propertyObject = nil;
+    __block NSString *regularTestString = @"my-regular-string";
+    __block NSNumber *numberTestStringAsNumber = @56;
+    
+    beforeEach(^{
+        propertyObject = [[PropertyTest alloc] init];
+    });
+    
+    it(@"will return nil when converting nil to any property type", ^{
+        id convertedValue = [propertyObject convertValue:nil toTypeOfPropertyWithName:@"arrayProperty"];
+        expect(convertedValue).to.beNil();
+        convertedValue = [propertyObject convertValue:nil toTypeOfPropertyWithName:@"setProperty"];
+        expect(convertedValue).to.beNil();
+        convertedValue = [propertyObject convertValue:nil toTypeOfPropertyWithName:@"dictionaryProperty"];
+        expect(convertedValue).to.beNil();
+        convertedValue = [propertyObject convertValue:nil toTypeOfPropertyWithName:@"stringProperty"];
+        expect(convertedValue).to.beNil();
+        convertedValue = [propertyObject convertValue:nil toTypeOfPropertyWithName:@"urlProperty"];
+        expect(convertedValue).to.beNil();
+        convertedValue = [propertyObject convertValue:nil toTypeOfPropertyWithName:@"dateProperty"];
+        expect(convertedValue).to.beNil();
+        convertedValue = [propertyObject convertValue:nil toTypeOfPropertyWithName:@"dataProperty"];
+        expect(convertedValue).to.beNil();
+        convertedValue = [propertyObject convertValue:nil toTypeOfPropertyWithName:@"numberProperty"];
+        expect(convertedValue).to.beNil();
+    });
+    
+    it(@"will return nil when converting a string to a the type of a property that doesn't exist", ^{
+        id convertedValue = [propertyObject convertValue:regularTestString toTypeOfPropertyWithName:@"myFakeProperty"];
+        expect(convertedValue).to.beNil();
+    });
+    
+    it(@"will return nil when converting any object to property with a primitive type", ^{
+        propertyObject = [[PrimitivePropertyTest alloc] init];
+        id convertedValue = [propertyObject convertValue:numberTestStringAsNumber toTypeOfPropertyWithName:@"booleanProperty"];
+        expect(convertedValue).to.beNil();
+        convertedValue = [propertyObject convertValue:numberTestStringAsNumber toTypeOfPropertyWithName:@"integerProperty"];
+        expect(convertedValue).to.beNil();
+        convertedValue = [propertyObject convertValue:numberTestStringAsNumber toTypeOfPropertyWithName:@"doubleProperty"];
+        expect(convertedValue).to.beNil();
+    });
+
+});
 
 describe(@"value conversion from NSString", ^{
     
