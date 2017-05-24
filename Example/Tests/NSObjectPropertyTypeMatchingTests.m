@@ -85,6 +85,25 @@ describe(@"value conversion for edge cases", ^{
 
 });
 
+describe(@"value conversion from NSDictionary", ^{
+    
+    __block NSDictionary *regularTestDictionary = @{@"my_first_key": @"my first amazing value", @"my_second_key": @"my second amazing value"};
+    __block PropertyTest *propertyObject = nil;
+    
+    beforeEach(^{
+        propertyObject = [[PropertyTest alloc] init];
+    });
+    
+    it(@"will succeed when converting a regular dictionary for property of type NSDictionary", ^{
+        expect([propertyObject convertValue:regularTestDictionary toTypeOfPropertyWithName:@"dictionaryProperty"]).to.equal(regularTestDictionary);
+    });
+    
+    it(@"will return nil when converting a regular date for property of type NSArray", ^{
+        id convertedValue = [propertyObject convertValue:regularTestDictionary toTypeOfPropertyWithName:@"arrayProperty"];
+        expect(convertedValue).to.beNil();
+    });
+});
+
 describe(@"value conversion from NSData", ^{
     
     __block NSString *regularTestDataAsString = @"my amazing data blob";
