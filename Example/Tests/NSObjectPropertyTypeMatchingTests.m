@@ -85,6 +85,32 @@ describe(@"value conversion for edge cases", ^{
 
 });
 
+describe(@"value conversion from NSData", ^{
+    
+    __block NSString *regularTestDataAsString = @"my amazing data blob";
+    __block NSData *regularTestData = [regularTestDataAsString dataUsingEncoding:NSUTF8StringEncoding];
+    __block PropertyTest *propertyObject = nil;
+    
+    beforeEach(^{
+        propertyObject = [[PropertyTest alloc] init];
+    });
+    
+    it(@"will succeed when converting a regular data blob for property of type NSData", ^{
+        expect([propertyObject convertValue:regularTestData toTypeOfPropertyWithName:@"dataProperty"]).to.equal(regularTestData);
+    });
+    
+    it(@"will succeed when converting a regular data blog for property of type NSString", ^{
+        id convertedValue = [propertyObject convertValue:regularTestData toTypeOfPropertyWithName:@"stringProperty"];
+        expect(convertedValue).to.beKindOf([NSString class]);
+        expect(convertedValue).to.equal(regularTestDataAsString);
+    });
+    
+    it(@"will return nil when converting a regular date for property of type NSArray", ^{
+        id convertedValue = [propertyObject convertValue:regularTestData toTypeOfPropertyWithName:@"arrayProperty"];
+        expect(convertedValue).to.beNil();
+    });
+});
+
 describe(@"value conversion from NSDate", ^{
     
     __block NSString *regularTestDateAsString = @"2017-05-24 15:31:29 UTC";
