@@ -1,0 +1,5 @@
+[
+  "-workspace", "Example/CRUConfig.xcworkspace",
+  "-scheme", "CRUConfig-Example",
+  "-destination", "platform=iOS Simulator,name=iPhone 7,OS=10.3"
+]

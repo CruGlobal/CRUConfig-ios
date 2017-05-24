@@ -13,6 +13,6 @@ before_install:
  - gem install xcov
  - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -workspace Example/CRUConfig.xcworkspace -scheme CRUConfig-Example -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+- xctool run-tests
 #- xcov -w Example/CRUConfig.xcworkspace -s CRUConfig-Example --include_targets CRUConfig.framework -o xcov_output
 - pod lib lint
