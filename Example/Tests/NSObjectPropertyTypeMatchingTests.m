@@ -161,6 +161,11 @@ describe(@"value conversion from NSString", ^{
         expect(convertedNumber).to.beKindOf([NSNumber class]);
         expect(convertedNumber).to.equal(numberTestStringAsNumber);
     });
+    
+    it(@"will return nil when converting a regular string for property of type NSArray", ^{
+        id convertedValue = [propertyObject convertValue:regularTestString toTypeOfPropertyWithName:@"arrayProperty"];
+        expect(convertedValue).to.beNil();
+    });
 });
 
 SpecEnd
