@@ -33,3 +33,4 @@ Carthage
 Pods/
 
 xcov_report/
+xcov_output/
