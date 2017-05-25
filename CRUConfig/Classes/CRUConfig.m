@@ -13,6 +13,8 @@
 
 - (void)setPropertiesWithContentsOfConfigDictionary:(NSDictionary *)configDictionary {
 	
+    [super setPropertiesWithContentsOfConfigDictionary:configDictionary];
+    
 	//set urls base on mode
 	NSString *baseUrlString			= configDictionary[@"base_url"] ?: @"";
 	_baseUrl						= [NSURL URLWithString:baseUrlString];

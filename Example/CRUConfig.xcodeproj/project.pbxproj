@@ -20,11 +20,16 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		6003F5BC195388D20070C39A /* NSStringCaseTransformationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* NSStringCaseTransformationsTests.m */; };
+		681CF5DA1EC0E27B00C83A1A /* CRUConfigDemoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 681CF5D91EC0E27B00C83A1A /* CRUConfigDemoConfig.m */; };
 		6890632D1CD26A8A005A3575 /* MYAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6890632C1CD26A8A005A3575 /* MYAPI.m */; };
 		6890632F1CD26BF5005A3575 /* config.debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6890632E1CD26BF5005A3575 /* config.debug.plist */; };
 		689063321CD26C85005A3575 /* config.beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689063301CD26C85005A3575 /* config.beta.plist */; };
 		689063331CD26C85005A3575 /* config.release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689063311CD26C85005A3575 /* config.release.plist */; };
+		68C0A3881ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0A3871ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m */; };
+		68C0A38A1ED61A4D00CC97A3 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68C0A3891ED61A4D00CC97A3 /* test.plist */; };
+		68C0A38D1ED61BDE00CC97A3 /* CRUEmptyConfigTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0A38C1ED61BDE00CC97A3 /* CRUEmptyConfigTest.m */; };
+		68C0A38F1ED61D6000CC97A3 /* CRUEmptyConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0A38E1ED61D6000CC97A3 /* CRUEmptyConfigTests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A5CD661624E4CAAA4C62091B /* Pods_CRUConfig_CRUConfig_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE3BA55C2E6116FA1345FD5 /* Pods_CRUConfig_CRUConfig_Example.framework */; };
 /* End PBXBuildFile section */
@@ -60,14 +65,21 @@
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* NSStringCaseTransformationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringCaseTransformationsTests.m; sourceTree = "<group>"; };
 		605B5FB5B643BE56669E0427 /* Pods-CRUConfig-CRUConfig_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Tests/Pods-CRUConfig-CRUConfig_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		681CF5D81EC0E27B00C83A1A /* CRUConfigDemoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUConfigDemoConfig.h; sourceTree = "<group>"; };
+		681CF5D91EC0E27B00C83A1A /* CRUConfigDemoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUConfigDemoConfig.m; sourceTree = "<group>"; };
 		6890632B1CD26A8A005A3575 /* MYAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAPI.h; sourceTree = "<group>"; };
 		6890632C1CD26A8A005A3575 /* MYAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAPI.m; sourceTree = "<group>"; };
 		6890632E1CD26BF5005A3575 /* config.debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.debug.plist; sourceTree = "<group>"; };
 		689063301CD26C85005A3575 /* config.beta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.beta.plist; sourceTree = "<group>"; };
 		689063311CD26C85005A3575 /* config.release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.release.plist; sourceTree = "<group>"; };
+		68C0A3871ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectPropertyTypeMatchingTests.m; sourceTree = "<group>"; };
+		68C0A3891ED61A4D00CC97A3 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
+		68C0A38B1ED61BDE00CC97A3 /* CRUEmptyConfigTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUEmptyConfigTest.h; sourceTree = "<group>"; };
+		68C0A38C1ED61BDE00CC97A3 /* CRUEmptyConfigTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUEmptyConfigTest.m; sourceTree = "<group>"; };
+		68C0A38E1ED61D6000CC97A3 /* CRUEmptyConfigTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUEmptyConfigTests.m; sourceTree = "<group>"; };
 		7F98B0426B4CE0F3C552D0E5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81319ADCB2AA6BD565F21BA6 /* Pods-CRUConfig-CRUConfig_Example.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Example.beta.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Example/Pods-CRUConfig-CRUConfig_Example.beta.xcconfig"; sourceTree = "<group>"; };
 		836105295A2F428DE91B918A /* Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig"; path = "Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Tests/Pods-CRUConfig-CRUConfig_Tests.beta.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +176,8 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* CRUConfig-Prefix.pch */,
+				681CF5D81EC0E27B00C83A1A /* CRUConfigDemoConfig.h */,
+				681CF5D91EC0E27B00C83A1A /* CRUConfigDemoConfig.m */,
 				6890632E1CD26BF5005A3575 /* config.debug.plist */,
 				689063301CD26C85005A3575 /* config.beta.plist */,
 				689063311CD26C85005A3575 /* config.release.plist */,
@@ -174,7 +188,9 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				68C0A38E1ED61D6000CC97A3 /* CRUEmptyConfigTests.m */,
+				6003F5BB195388D20070C39A /* NSStringCaseTransformationsTests.m */,
+				68C0A3871ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -186,6 +202,9 @@
 				6003F5B7195388D20070C39A /* Tests-Info.plist */,
 				6003F5B8195388D20070C39A /* InfoPlist.strings */,
 				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+				68C0A3891ED61A4D00CC97A3 /* test.plist */,
+				68C0A38B1ED61BDE00CC97A3 /* CRUEmptyConfigTest.h */,
+				68C0A38C1ED61BDE00CC97A3 /* CRUEmptyConfigTest.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,12 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "CRUConfig_Example" */;
 			buildPhases = (
-				72436764EF1944FDADC75982 /* 📦 Check Pods Manifest.lock */,
+				72436764EF1944FDADC75982 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				EB0942714410C3F0B3A3D4A0 /* 📦 Embed Pods Frameworks */,
-				CECDC74D487CBD5E66AB8E85 /* 📦 Copy Pods Resources */,
+				EB0942714410C3F0B3A3D4A0 /* [CP] Embed Pods Frameworks */,
+				CECDC74D487CBD5E66AB8E85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,12 +259,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CRUConfig_Tests" */;
 			buildPhases = (
-				F04E97AA86D6A090C8C61CC1 /* 📦 Check Pods Manifest.lock */,
+				F04E97AA86D6A090C8C61CC1 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				DFD860CD27AE93D5BD61027E /* 📦 Embed Pods Frameworks */,
-				F1C7AF893B4095FA3C989DF0 /* 📦 Copy Pods Resources */,
+				DFD860CD27AE93D5BD61027E /* [CP] Embed Pods Frameworks */,
+				F1C7AF893B4095FA3C989DF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,7 +283,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CRU;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Harro;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -309,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C0A38A1ED61A4D00CC97A3 /* test.plist in Resources */,
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,29 +336,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		72436764EF1944FDADC75982 /* 📦 Check Pods Manifest.lock */ = {
+		72436764EF1944FDADC75982 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		CECDC74D487CBD5E66AB8E85 /* 📦 Copy Pods Resources */ = {
+		CECDC74D487CBD5E66AB8E85 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,14 +366,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Example/Pods-CRUConfig-CRUConfig_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DFD860CD27AE93D5BD61027E /* 📦 Embed Pods Frameworks */ = {
+		DFD860CD27AE93D5BD61027E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,14 +381,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Tests/Pods-CRUConfig-CRUConfig_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB0942714410C3F0B3A3D4A0 /* 📦 Embed Pods Frameworks */ = {
+		EB0942714410C3F0B3A3D4A0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,29 +396,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRUConfig-CRUConfig_Example/Pods-CRUConfig-CRUConfig_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F04E97AA86D6A090C8C61CC1 /* 📦 Check Pods Manifest.lock */ = {
+		F04E97AA86D6A090C8C61CC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F1C7AF893B4095FA3C989DF0 /* 📦 Copy Pods Resources */ = {
+		F1C7AF893B4095FA3C989DF0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* CRUAppDelegate.m in Sources */,
+				681CF5DA1EC0E27B00C83A1A /* CRUConfigDemoConfig.m in Sources */,
 				6003F5A7195388D20070C39A /* CRUViewController.m in Sources */,
 				6890632D1CD26A8A005A3575 /* MYAPI.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -424,7 +445,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				6003F5BC195388D20070C39A /* NSStringCaseTransformationsTests.m in Sources */,
+				68C0A38D1ED61BDE00CC97A3 /* CRUEmptyConfigTest.m in Sources */,
+				68C0A38F1ED61D6000CC97A3 /* CRUEmptyConfigTests.m in Sources */,
+				68C0A3881ED5CF1200CC97A3 /* NSObjectPropertyTypeMatchingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,14 +495,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -511,13 +540,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -544,6 +578,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CRUConfig/CRUConfig-Prefix.pch";
 				INFOPLIST_FILE = "CRUConfig/CRUConfig-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -569,6 +604,7 @@
 					"RELEASE=1",
 				);
 				INFOPLIST_FILE = "CRUConfig/CRUConfig-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -633,13 +669,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -671,6 +712,7 @@
 					"BETA=1",
 				);
 				INFOPLIST_FILE = "CRUConfig/CRUConfig-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
